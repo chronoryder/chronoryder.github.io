@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ryder Comedy</title>
+    <style>
+        body {
+            background-color: black;
+            color: lightgray; /* Default text color */
+            text-align: left;
+            font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif; 
+            padding-left: 50px; /* Moves text slightly away from the left edge */
+            position: relative; /* Needed for absolute positioning inside */
+            height: 80vh; /* Makes the page shorter (80% of viewport height) */
+
+        }
+
+        h1 {
+            padding-top: 30px; /* Adjust space between the top and header */
+        }
+
+        p {
+            text-indent: 120px; /* Default indent */
+            margin-top: 30px; /* Adjust space above */
+            margin-bottom: 10px; /* Adjust space below */
+        }
+
+        /* Make paragraph 1 superscript */
+        p:nth-of-type(1) {
+            vertical-align: super;
+        }
+
+        /* Adjust indentation */
+        p:nth-of-type(2) {
+            text-indent: 170px; /* More indentation for paragraph 2 */
+            margin-top: 60px; /* Adjust space above */
+        }
+
+        p:nth-of-type(3) {
+            text-indent: 230px; /* Even more indentation for paragraph 3 */
+            position: absolute; /* Anchors to the bottom */
+            bottom: -40px; /* Moves slightly up from the absolute bottom */
+            left: 50px; /* Aligns with the body padding */
+            color: red; /* Makes the last paragraph red */
+            vertical-align: sub;
+        }
+
+
+
+
+        /* Shows Section */
+        .shows {
+            position: absolute;
+            right: 100px; /* Anchors the table to the right side */
+            top: 2.5%; /* Adjusts the vertical placement */
+            text-align: left;
+        }
+
+        .shows h2 {
+            color: lightgray;
+            margin-bottom: 10px;
+        }
+
+        /* Table Styling */
+        .shows table {
+            border-collapse: collapse;
+            width: auto;
+        }
+
+        .shows th, .shows td {
+            padding: 8px 12px;
+            text-align: left;
+            font-size: 16px; /* Matches paragraph 1 */
+        }
+
+        .shows th {
+            background-color: #222; /* Darker header background */
+        }
+
+        /* Make the date column text red */
+        .shows td:first-child {
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+
+<h1>ryder live</h1>
+<p>watch</p>
+<p>me</p>
+<p>bomb</p>
+
+<!-- Shows Section -->
+<section class="shows">
+    <h2>shows</h2>
+    <table>
+        <tr>
+            <th>Date</th>
+            <th>Venue</th>
+        </tr>
+        <tr>
+            <td>March 17</td>
+            <td>The Laugh Factory</td>
+        </tr>
+        <tr>
+            <td>April 5</td>
+            <td>Comedy Cellar</td>
+        </tr>
+        <tr>
+            <td>April 21</td>
+            <td>The Improv</td>
+        </tr>
+    </table>
+</section>
+
+</body>
+</html>
