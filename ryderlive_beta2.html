@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ryder live</title>
+    <style>
+        body {
+            background-color: black;
+            color: darkgray; /* Default text color changed to darkgray */
+            text-align: left;
+            font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif; 
+            position: relative; /* Needed for absolute positioning inside */
+            height: 100vh; /* Makes the page take full viewport height */
+        }
+
+        h1 {
+            position: absolute;
+            top: 10%; /* Moves "ryder live" higher up the page */
+            left: 10%; /* Moves "ryder live" 10% from the left */
+            font-size: 3vw;
+        }
+        
+        .shows {
+            position: absolute;
+            top: 10%; /* Align "shows" with "ryder live" */
+            right: 10%; /* Moves "shows" and table to 10% from the right */
+            text-align: left;
+        }
+
+        .shows h2 {
+            font-size: 2vw; /* Text size for "shows" */
+            margin-bottom: 0.5vw; /* Adjusted spacing */
+        }
+
+        /* Table Styling */
+        .shows table {
+            border-collapse: collapse;
+            width: auto;
+            max-width: 600px;
+            margin-top: 1vw;
+            font-size: 1.5vw; /* Text size in the table */
+        }
+
+        .shows th, .shows td {
+            padding: 0.5vw 1vw;
+            text-align: left;
+        }
+
+        .shows th {
+            background-color: #222; /* Darker header background */
+            color: lightgray; /* Light gray text for headers */
+        }
+
+        /* Make the date column text red */
+        .shows td:first-child {
+            color: red;
+        }
+
+        .watch {
+            position: absolute;
+            top: 25%; /* Moves "watch" up by 6% */
+            left: 14%; /* Keeps "watch" at the same left position */
+            font-size: 1.5vw;
+        }
+
+        .me {
+            position: absolute;
+            top: 39%; /* Keeps "me" at the same top position */
+            left: 21%; /* Moves "me" 4% to the left */
+            font-size: 1.25vw;
+            transform: translate(-50%, -50%); /* Centers "me" precisely */
+        }
+
+        .bomb {
+            position: absolute;
+            top: 88%; /* Moves "bomb" to 90% from the top */
+            left: 24%; /* Moves "bomb" 5% from the left */
+            font-size: 1.2vw;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+<h1>ryder live</h1>
+
+<div class="watch">watch</div>
+<div class="me">me</div>
+<div class="bomb">bomb</div>
+
+<div class="shows">
+    <h2>shows</h2>
+    <table>
+        <tr>
+            <th>Date</th>
+            <th>Venue</th>
+        </tr>
+        <tr>
+            <td>March 17</td>
+            <td>The Laugh Factory</td>
+        </tr>
+        <tr>
+            <td>April 5</td>
+            <td>Comedy Cellar</td>
+        </tr>
+        <tr>
+            <td>April 21</td>
+            <td>The Improv</td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>
