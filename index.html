@@ -3,7 +3,10 @@
 <head>
     <title>ryder live</title>
     <style>
-        body {
+        html, body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Prevents scrolling */
             background-color: black;
             color: darkgray; /* Default text color changed to darkgray */
             text-align: left;
@@ -58,14 +61,14 @@
         .watch {
             position: absolute;
             top: 25%; /* Moves "watch" up by 6% */
-            left: 14%; /* Keeps "watch" at the same left position */
+            left: 17%; /* Keeps "watch" at the same left position */
             font-size: 1.5vw;
         }
 
         .me {
             position: absolute;
             top: 39%; /* Keeps "me" at the same top position */
-            left: 21%; /* Moves "me" 4% to the left */
+            left: 22%; /* Moves "me" 4% to the left */
             font-size: 1.25vw;
             transform: translate(-50%, -50%); /* Centers "me" precisely */
         }
@@ -73,9 +76,18 @@
         .bomb {
             position: absolute;
             top: 88%; /* Moves "bomb" to 90% from the top */
-            left: 24%; /* Moves "bomb" 5% from the left */
+            left: 25%; /* Moves "bomb" 5% from the left */
             font-size: 1.2vw;
             color: red;
+        }
+
+        .center-image {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 80%; /* Prevents the image from being too large */
+            height: auto;
         }
     </style>
 </head>
@@ -86,6 +98,8 @@
 <div class="watch">watch</div>
 <div class="me">me</div>
 <div class="bomb">bomb</div>
+
+<img src="cat.carcass.jpg" class="center-image">
 
 <div class="shows">
     <h2>shows</h2>
