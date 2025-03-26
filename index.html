@@ -83,10 +83,18 @@
 
         .center-image {
             position: absolute;
-            top: 70%; /* Adjusted to position between "bomb" and the table */
             left: 50%;
-            transform: translate(-50%, -50%);
-            max-width: 40%; /* Scaled down to fit well */
+            bottom: 20%; /* 20% from the bottom */
+            transform: translate(-50%, 0);
+            max-width: 15%; /* Scaled down to 15% */
+            height: auto;
+        }
+
+        .bottom-right-image {
+            position: absolute;
+            bottom: 5%;
+            right: 5%;
+            max-width: 10%; /* Scaled to 10% */
             height: auto;
         }
     </style>
@@ -100,6 +108,8 @@
 <div class="bomb">bomb</div>
 
 <img src="cat.carcass.png" class="center-image">
+
+<img src="catbutt.png" class="bottom-right-image">
 
 <div class="shows">
     <h2>shows</h2>
