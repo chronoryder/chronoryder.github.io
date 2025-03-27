@@ -60,23 +60,23 @@
 
         .watch {
             position: absolute;
-            top: 25%; /* Moves "watch" up by 6% */
-            left: 17%; /* Keeps "watch" at the same left position */
+            top: 25%;
+            left: 17%;
             font-size: 1.5vw;
         }
 
         .me {
             position: absolute;
-            top: 39%; /* Keeps "me" at the same top position */
-            left: 22%; /* Moves "me" 4% to the left */
+            top: 39%;
+            left: 22%;
             font-size: 1.25vw;
-            transform: translate(-50%, -50%); /* Centers "me" precisely */
+            transform: translate(-50%, -50%);
         }
 
         .bomb {
             position: absolute;
-            top: 88%; /* Moves "bomb" to 90% from the top */
-            left: 24%; /* Moves "bomb" 5% from the left */
+            top: 88%;
+            left: 24%;
             font-size: 1.2vw;
             color: red;
         }
@@ -84,9 +84,9 @@
         .center-image {
             position: absolute;
             left: 50%;
-            bottom: 20%; /* 20% from the bottom */
+            bottom: 20%;
             transform: translate(-50%, 0);
-            max-width: 15%; /* Scaled down to 15% */
+            max-width: 15%;
             height: auto;
         }
 
@@ -94,8 +94,30 @@
             position: absolute;
             bottom: 5%;
             right: 5%;
-            max-width: 10%; /* Scaled to 10% */
+            max-width: 10%;
             height: auto;
+        }
+
+        /* Adjust font sizes for mobile screens */
+        @media screen and (max-width: 768px) {
+            h1 {
+                font-size: 6vw;
+            }
+            .shows h2 {
+                font-size: 4vw;
+            }
+            .shows table {
+                font-size: 3vw;
+            }
+            .watch {
+                font-size: 3vw;
+            }
+            .me {
+                font-size: 2.5vw;
+            }
+            .bomb {
+                font-size: 2.4vw;
+            }
         }
     </style>
 </head>
