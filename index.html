@@ -19,7 +19,7 @@
             position: absolute;
             top: 10%; /* Moves "ryder live" higher up the page */
             left: 10%; /* Moves "ryder live" 10% from the left */
-            font-size: 3vw;
+            font-size: 1.5vw;
         }
         
         .shows {
@@ -30,7 +30,7 @@
         }
 
         .shows h2 {
-            font-size: 2vw; /* Text size for "shows" */
+            font-size: .8vw; /* Text size for "shows" */
             margin-bottom: 0.5vw; /* Adjusted spacing */
         }
 
@@ -40,7 +40,7 @@
             width: auto;
             max-width: 600px;
             margin-top: 1vw;
-            font-size: 1.5vw; /* Text size in the table */
+            font-size: 0.6vw; /* Text size in the table */
         }
 
         .shows th, .shows td {
@@ -62,14 +62,14 @@
             position: absolute;
             top: 25%;
             left: 17%;
-            font-size: 1.5vw;
+            font-size: 0.6vw;
         }
 
         .me {
             position: absolute;
             top: 39%;
             left: 22%;
-            font-size: 1.25vw;
+            font-size: 1vw;
             transform: translate(-50%, -50%);
         }
 
@@ -77,7 +77,7 @@
             position: absolute;
             top: 88%;
             left: 24%;
-            font-size: 1.2vw;
+            font-size: 0.6vw;
             color: red;
         }
 
@@ -101,8 +101,24 @@
         /* Adjust font sizes for mobile screens */
         @media screen and (max-width: 768px) {
             h1 {
-                font-size: 3vw;
+                font-size: 1.5vw;
             }
+            .shows h2 {
+                font-size: .8vw;
+            }
+            .shows table {
+                font-size: 0.6vw;
+            }
+            .watch {
+                font-size: 0.6vw;
+            }
+            .me {
+                font-size: 1vw;
+            }
+            .bomb {
+                font-size: 0.6vw;
+            }
+        }
             .shows h2 {
                 font-size: 2vw;
             }
@@ -113,26 +129,10 @@
                 font-size: 1.5vw;
             }
             .me {
-                font-size: 1.25vw;
-            }
-            .bomb {
-                font-size: 1.2vw;
-            }
-        }
-            .shows h2 {
-                font-size: 4vw;
-            }
-            .shows table {
-                font-size: 3vw;
-            }
-            .watch {
-                font-size: 3vw;
-            }
-            .me {
                 font-size: 2.5vw;
             }
             .bomb {
-                font-size: 2.4vw;
+                font-size: 1.5vw;
             }
         }
     </style>
