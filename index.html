@@ -99,42 +99,45 @@
         }
 
         /* Adjust font sizes for mobile screens */
-        @media screen and (max-width: 768px) {
-            h1 {
-                font-size: 1.5vw;
-            }
-            .shows h2 {
-                font-size: .8vw;
-            }
-            .shows table {
-                font-size: 0.6vw;
-            }
-            .watch {
-                font-size: 0.6vw;
-            }
-            .me {
-                font-size: 1vw;
-            }
-            .bomb {
-                font-size: 0.6vw;
-            }
-        }
-            .shows h2 {
-                font-size: 2vw;
-            }
-            .shows table {
-                font-size: 1.5vw;
-            }
-            .watch {
-                font-size: 1.5vw;
-            }
-            .me {
-                font-size: 2.5vw;
-            }
-            .bomb {
-                font-size: 1.5vw;
-            }
-        }
+      @media screen and (max-width: 768px), (max-height: 600px) {
+    h1 {
+        font-size: 5vw; /* Increase size for readability */
+        top: 5%; /* Adjust for smaller screens */
+    }
+    .shows {
+        top: 15%;
+        right: 5%;
+    }
+    .shows h2 {
+        font-size: 4vw;
+    }
+    .shows table {
+        font-size: 3vw;
+    }
+    .watch {
+        font-size: 3vw;
+        top: 30%;
+        left: 10%;
+    }
+    .me {
+        font-size: 5vw;
+        top: 45%;
+        left: 15%;
+    }
+    .bomb {
+        font-size: 3vw;
+        top: 80%;
+        left: 20%;
+    }
+    .center-image {
+        max-width: 40%;
+        bottom: 10%;
+    }
+    .bottom-right-image {
+        max-width: 10%;
+    }
+}
+
     </style>
 </head>
 <body>
