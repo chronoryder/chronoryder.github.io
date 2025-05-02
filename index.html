@@ -8,15 +8,14 @@
         html, body {
             margin: 0;
             padding: 0;
-            overflow: hidden; /* Prevents scrolling */
+            overflow: hidden;
             background-color: black;
-            color: darkgray; /* Default text color changed to darkgray */
+            color: darkgray;
             text-align: left;
             font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif; 
             position: relative;
             width: 100%;
             height: 100%;
-
         }
 
         h1 {
@@ -56,7 +55,6 @@
             color: lightgray;
         }
 
-        /* Make the date column text red */
         .shows td:first-child {
             color: red;
         }
@@ -84,13 +82,14 @@
         }
 
         .center-image {
-    	    display: block;
-    		margin: 0 auto 0 auto; /* TOP 0px, AUTO sides, 0px bottom */
-    		max-width: 32%;
-    		height: auto;
-    		padding-left: 5%;
-		padding-bottom: 0%;
-	}
+            display: block;
+            margin: 0 auto 0 auto;
+            max-width: 32%;
+            height: auto;
+            padding-left: 5%;
+            padding-bottom: 0%;
+        }
+
         .bottom-right-image {
             position: absolute;
             bottom: 5%;
@@ -99,7 +98,36 @@
             height: auto;
         }
 
-        /* Mobile Styles (Phones, 9:16 aspect ratio) */
+        .image-wrapper {
+            position: relative;
+            display: inline-block;
+        }
+
+        .center-link {
+            position: absolute;
+            top: 35%;
+            left: 35%;
+            width: 30%;
+            height: 30%;
+            z-index: 2;
+            cursor: pointer;
+        }
+
+        .email-link {
+            position: fixed;
+            top: 2%;
+            right: 2%;
+            font-size: 1vw;
+            color: darkgray;
+            text-decoration: none;
+            z-index: 999;
+        }
+
+        .email-link:hover {
+            text-decoration: underline;
+            color: white;
+        }
+
         @media screen and (max-width: 768px) {
             h1 {
                 font-size: 6vw;
@@ -139,21 +167,20 @@
             }
 
             .center-image {
-    		position: absolute;  /* ADD this */
-    		left: 10%;
-    		bottom: 5%;
-    		max-width: 30%;
-    		height: auto;
-    		margin: 0;  /* REMOVE margin auto */
-    		padding: 0; /* optional cleanup */
-	    }
+                position: absolute;
+                left: 10%;
+                bottom: 5%;
+                max-width: 30%;
+                height: auto;
+                margin: 0;
+                padding: 0;
+            }
 
             .bottom-right-image {
                 max-width: 10%;
             }
         }
 
-        /* Tablet Styles */
         @media screen and (max-width: 1024px) and (min-width: 768px) {
             h1 {
                 font-size: 6vw;
@@ -193,38 +220,25 @@
             }
 
             .center-image {
-    		position: absolute;  /* ADD this */
-    		left: 10%;
-    		bottom: 5%;
-    		max-width: 30%;
-    		height: auto;
-    		margin: 0;  /* REMOVE margin auto */
-    		padding: 0; /* optional cleanup */
-	    }
+                position: absolute;
+                left: 10%;
+                bottom: 5%;
+                max-width: 30%;
+                height: auto;
+                margin: 0;
+                padding: 0;
+            }
 
             .bottom-right-image {
                 max-width: 10%;
             }
         }
-.email-link {
-    position: fixed;
-    top: 2%;
-    left: 2%;
-    font-size: 1vw;
-    color: darkgray;
-    text-decoration: none;
-    z-index: 999;
-}
-
-.email-link:hover {
-    text-decoration: underline;
-    color: white;
-}
-
     </style>
 </head>
 <body>
-	
+
+<a href="mailto:me@ryder.baby" class="email-link">me@ryder.baby</a>
+
 <h1>ryder live</h1>
 
 <div class="watch">watch</div>
@@ -248,7 +262,7 @@
         </tr>
         <tr>
             <td>May 3</td>
-	    <td><a href="https://www.infinityroomsalem.com" target="_blank" style="color: inherit; text-decoration: underline;">Infinity Room</a></td>
+            <td><a href="https://www.infinityroomsalem.com" target="_blank" style="color: inherit; text-decoration: underline;">Infinity Room</a></td>
         </tr>
         <tr>
             <td>June 15, 2025</td>
