@@ -83,19 +83,33 @@
         }
 
         .center-image {
-    	    display: block;
-    		margin: 0 auto 0 auto; /* TOP 0px, AUTO sides, 0px bottom */
-    		max-width: 32%;
-    		height: auto;
-    		padding-left: 5%;
-		padding-bottom: 0%;
-	}
+            display: block;
+            margin: 0 auto 0 auto;
+            max-width: 32%;
+            height: auto;
+            padding-left: 5%;
+            padding-bottom: 0%;
+        }
+
         .bottom-right-image {
             position: absolute;
             bottom: 5%;
             right: 5%;
             max-width: 5%;
             height: auto;
+        }
+
+        .email-link {
+            position: absolute;
+            top: 2%;
+            right: 2%;
+            font-size: 1.2vw;
+            color: darkgray;
+            text-decoration: none;
+        }
+
+        .email-link:hover {
+            text-decoration: underline;
         }
 
         /* Mobile Styles (Phones, 9:16 aspect ratio) */
@@ -138,17 +152,21 @@
             }
 
             .center-image {
-    		position: absolute;  /* ADD this */
-    		left: 10%;
-    		bottom: 5%;
-    		max-width: 30%;
-    		height: auto;
-    		margin: 0;  /* REMOVE margin auto */
-    		padding: 0; /* optional cleanup */
-	    }
+                position: absolute;
+                left: 10%;
+                bottom: 5%;
+                max-width: 30%;
+                height: auto;
+                margin: 0;
+                padding: 0;
+            }
 
             .bottom-right-image {
                 max-width: 10%;
+            }
+
+            .email-link {
+                font-size: 3vw;
             }
         }
 
@@ -192,17 +210,21 @@
             }
 
             .center-image {
-    		position: absolute;  /* ADD this */
-    		left: 10%;
-    		bottom: 5%;
-    		max-width: 30%;
-    		height: auto;
-    		margin: 0;  /* REMOVE margin auto */
-    		padding: 0; /* optional cleanup */
-	    }
+                position: absolute;
+                left: 10%;
+                bottom: 5%;
+                max-width: 30%;
+                height: auto;
+                margin: 0;
+                padding: 0;
+            }
 
             .bottom-right-image {
                 max-width: 10%;
+            }
+
+            .email-link {
+                font-size: 2vw;
             }
         }
 
@@ -215,6 +237,8 @@
 <div class="watch">watch</div>
 <div class="me">me</div>
 <div class="bomb">bomb</div>
+
+<a href="mailto:me@ryder.baby" class="email-link">me@ryder.baby</a>
 
 <a href="https://www.x.com/@chronoryder" target="_blank">
     <img src="pinksuit.png" class="center-image">
@@ -232,7 +256,7 @@
         </tr>
         <tr>
             <td>May 3</td>
-	    <td><a href="https://www.infinityroomsalem.com" target="_blank" style="color: inherit; text-decoration: underline;">Infinity Room</a></td>
+            <td><a href="https://www.infinityroomsalem.com" target="_blank" style="color: inherit; text-decoration: underline;">Infinity Room</a></td>
         </tr>
         <tr>
             <td>June 15, 2025</td>
