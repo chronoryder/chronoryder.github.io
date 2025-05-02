@@ -8,9 +8,9 @@
         html, body {
             margin: 0;
             padding: 0;
-            overflow: hidden;
+            overflow: hidden; /* Prevents scrolling */
             background-color: black;
-            color: darkgray;
+            color: darkgray; /* Default text color changed to darkgray */
             text-align: left;
             font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif; 
             position: relative;
@@ -55,6 +55,7 @@
             color: lightgray;
         }
 
+        /* Make the date column text red */
         .shows td:first-child {
             color: red;
         }
@@ -82,14 +83,13 @@
         }
 
         .center-image {
-            display: block;
-            margin: 0 auto 0 auto;
-            max-width: 32%;
-            height: auto;
-            padding-left: 5%;
-            padding-bottom: 0%;
-        }
-
+    	    display: block;
+    		margin: 0 auto 0 auto; /* TOP 0px, AUTO sides, 0px bottom */
+    		max-width: 32%;
+    		height: auto;
+    		padding-left: 5%;
+		padding-bottom: 0%;
+	}
         .bottom-right-image {
             position: absolute;
             bottom: 5%;
@@ -98,36 +98,7 @@
             height: auto;
         }
 
-        .image-wrapper {
-            position: relative;
-            display: inline-block;
-        }
-
-        .center-link {
-            position: absolute;
-            top: 35%;
-            left: 35%;
-            width: 30%;
-            height: 30%;
-            z-index: 2;
-            cursor: pointer;
-        }
-
-        .email-link {
-            position: fixed;
-            top: 2%;
-            right: 2%;
-            font-size: 1vw;
-            color: darkgray;
-            text-decoration: none;
-            z-index: 999;
-        }
-
-        .email-link:hover {
-            text-decoration: underline;
-            color: white;
-        }
-
+        /* Mobile Styles (Phones, 9:16 aspect ratio) */
         @media screen and (max-width: 768px) {
             h1 {
                 font-size: 6vw;
@@ -167,20 +138,21 @@
             }
 
             .center-image {
-                position: absolute;
-                left: 10%;
-                bottom: 5%;
-                max-width: 30%;
-                height: auto;
-                margin: 0;
-                padding: 0;
-            }
+    		position: absolute;  /* ADD this */
+    		left: 10%;
+    		bottom: 5%;
+    		max-width: 30%;
+    		height: auto;
+    		margin: 0;  /* REMOVE margin auto */
+    		padding: 0; /* optional cleanup */
+	    }
 
             .bottom-right-image {
                 max-width: 10%;
             }
         }
 
+        /* Tablet Styles */
         @media screen and (max-width: 1024px) and (min-width: 768px) {
             h1 {
                 font-size: 6vw;
@@ -220,35 +192,33 @@
             }
 
             .center-image {
-                position: absolute;
-                left: 10%;
-                bottom: 5%;
-                max-width: 30%;
-                height: auto;
-                margin: 0;
-                padding: 0;
-            }
+    		position: absolute;  /* ADD this */
+    		left: 10%;
+    		bottom: 5%;
+    		max-width: 30%;
+    		height: auto;
+    		margin: 0;  /* REMOVE margin auto */
+    		padding: 0; /* optional cleanup */
+	    }
 
             .bottom-right-image {
                 max-width: 10%;
             }
         }
+
     </style>
 </head>
 <body>
-
-<a href="mailto:me@ryder.baby" class="email-link">me@ryder.baby</a>
 
 <h1>ryder live</h1>
 
 <div class="watch">watch</div>
 <div class="me">me</div>
 <div class="bomb">bomb</div>
-<div class="image-wrapper">
-    <img src="pinksuit.png" class="center-image">
-    <a href="https://www.x.com/@chronoryder" class="center-link" target="_blank"></a>
-</div>
 
+<a href="https://www.x.com/@chronoryder" target="_blank">
+    <img src="pinksuit.png" class="center-image">
+</a>
 <a href="https://catbutt.city" target="_blank">
     <img src="catbutt.png" class="bottom-right-image">
 </a>
@@ -262,7 +232,7 @@
         </tr>
         <tr>
             <td>May 3</td>
-            <td><a href="https://www.infinityroomsalem.com" target="_blank" style="color: inherit; text-decoration: underline;">Infinity Room</a></td>
+	    <td><a href="https://www.infinityroomsalem.com" target="_blank" style="color: inherit; text-decoration: underline;">Infinity Room</a></td>
         </tr>
         <tr>
             <td>June 15, 2025</td>
