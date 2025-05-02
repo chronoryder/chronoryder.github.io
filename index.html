@@ -31,6 +31,21 @@
             position: relative;
             width: 100%;
             height: 100%;
+	.image-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.center-link {
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    width: 30%;
+    height: 30%;
+    z-index: 2;
+    cursor: pointer;
+}
+
         }
 
         h1 {
@@ -232,10 +247,11 @@
 <div class="watch">watch</div>
 <div class="me">me</div>
 <div class="bomb">bomb</div>
-
-<a href="https://www.x.com/@chronoryder" target="_blank">
+<div class="image-wrapper">
     <img src="pinksuit.png" class="center-image">
-</a>
+    <a href="https://www.x.com/@chronoryder" class="center-link" target="_blank"></a>
+</div>
+
 <a href="https://catbutt.city" target="_blank">
     <img src="catbutt.png" class="bottom-right-image">
 </a>
